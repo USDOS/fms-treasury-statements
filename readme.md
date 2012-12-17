@@ -16,6 +16,14 @@ This provides `download`, `parse` and `test` functions.
     # Download today's file
     download $(date --rfc-3339 day)
 
+After you download, you might want to commit the submodule
+
+    cd archive
+    git commit . -m downloaded\ a\ file
+    git push
+    cd ..
+    git commit archive -m downloaded\ a\ file
+
 The downloaded file gets saved in `./archive`. Parse it.
 
     parse ./archive/$filename
