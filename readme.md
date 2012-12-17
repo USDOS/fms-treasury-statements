@@ -1,4 +1,26 @@
+FMS Treasury Statement Parser
+-----
+This uses documentation-driven development; not all of this is implemented.
 
+Activate the environment
+
+    . activate
+
+This provides `download`, `parse` and `test` functions.
+
+    # Download today's file
+    download $(date --rfc-3339 day)
+
+The downloaded file gets saved in `./archive`. Parse it.
+
+    parse ./archive/$filename
+
+The tests expect fixtures to be in `./fixtures`.
+
+
+
+An email
+----
 Hope the soundsystem is blaring without me . . . stuck in the office on deadline for the banks project so unfortunately won't be able to make it tonight. 
 
 Anyway, just wanted to pass along the scraping prototype I've created (also uploaded in our Dropbox folder), so you guys can discuss if you want. 
