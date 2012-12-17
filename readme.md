@@ -2,6 +2,11 @@ FMS Treasury Statement Parser
 -----
 This uses documentation-driven development; not all of this is implemented.
 
+Load the `./archive` submodule; this repository saves the downloaded files
+
+    git submodule init
+    git submodule update
+
 Activate the environment
 
     . activate
@@ -17,6 +22,7 @@ The downloaded file gets saved in `./archive`. Parse it.
 
 The tests expect fixtures to be in `./fixtures`.
 
+    ./test
 
 
 An email
