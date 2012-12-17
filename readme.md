@@ -19,6 +19,7 @@ This provides `download`, `parse` and `test` functions.
 After you download, you might want to commit the submodule
 
     cd archive
+    git add .
     git commit . -m downloaded\ a\ file
     git push
     cd ..
