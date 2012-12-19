@@ -12,9 +12,16 @@ test.runner <- function(datestamp, filename, sql){
 }
 
 # Vectors of SQL so we can pinpoint errors.
-table1.sql <- c(
+sql <- c(
   'SELECT count(*) FROM table',
   'SELECT * FROM table'
 )
 
-test.runner('2012-11-29', 'table1.csv', table1.sql)
+test.runner('2012-11-29', 'table1.csv', sql)
+test.runner('2012-11-29', 'table2.csv', sql)
+test.runner('2012-11-29', 'table3a.csv', sql)
+test.runner('2012-11-29', 'table3b.csv', sql)
+test.runner('2012-11-29', 'table3c.csv', sql)
+test.runner('2012-11-29', 'table4.csv', sql)
+test.runner('2012-11-29', 'table5.csv', sql)
+test.runner('2012-11-29', 'table6.csv', sql)
