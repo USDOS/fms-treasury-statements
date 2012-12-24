@@ -1,9 +1,13 @@
 #!/bin/sh
 
-day=$(date -d $(date --rfc-3339 date) +%s)
+oneday=$((24 * 60 * 60))
+
+# Start four days ago
+day=$(($(date -d $(date --rfc-3339 date) +%s) - (4 * $oneday)))
+
 while
-  date -d@$day
-  echo download $(date -d@$day --rfc-3339 date)
+  a=$(date -d@$day +%a)
+  test $a = 'Sat' || test $a = 'Sun' || download @$day
 do
-  day=$((day - (24 * 60 * 60)))
+  day=$(($day - $oneday))
 done

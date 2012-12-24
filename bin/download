@@ -2,12 +2,17 @@
 set -e
 
 # Datestamp from input
-if [ "$#" = 1 ]; then
-  datestamp=$(date -d $(echo "$1"|sed 's/[^0-9]//g') +%y%m%d00)
+if [ -z "$FMS" ]; then
+  echo You must activate the FMS environment first.
+elif [ "$#" = 1 ]; then
+  datestamp=$(date -d "$1" +%y%m%d00)
 else
   echo "USAGE: $0 [datestamp]"
   exit 1
 fi
 
-wget -O "$FMS/archive/$datestamp.txt" \
-  "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"
+file=$(date -d "$1" +"$FMS/archive/%Y%m%d.txt")
+test -e "$file" ||
+  wget -O "$file" "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"
+
+sleep 0.5s
