@@ -9,5 +9,5 @@ else
   exit 1
 fi
 
-wget -O ./archive/$datestamp.txt \
+wget -O "$FMS/archive/$datestamp.txt" \
   "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"
