@@ -14,7 +14,7 @@ Activate the environment
 This provides `download`, `parse` and `test` functions.
 
     # Download today's file
-    download $(date --rfc-3339 day)
+    download $(date)
 
 After you download, you might want to commit the submodule
 
@@ -31,8 +31,11 @@ The downloaded file gets saved in `./archive`. Parse it.
 
 The tests expect fixtures to be in `./fixtures`.
 
-    ./test
+    test
 
+The `run` script does all of the downloading and parsing.
+
+    run
 
 An email
 ----
