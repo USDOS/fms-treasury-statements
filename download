@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# Datestamp from input
+if [ "$#" = 1 ]; then
+  datestamp=$(date -d $(echo "$1"|sed 's/[^0-9]//g') +%y%m%d00)
+else
+  echo "USAGE: $0 [datestamp]"
+  exit 1
+fi
+
+wget -O ./archive/$datestamp.txt \
+  "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"

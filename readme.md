@@ -14,7 +14,7 @@ Activate the environment
 This provides `download`, `parse` and `test` functions.
 
     # Download today's file
-    download $(date --rfc-3339 day)
+    ./download $(date --rfc-3339 day)
 
 After you download, you might want to commit the submodule
 
