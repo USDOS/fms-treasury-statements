@@ -1,11 +1,20 @@
 #!/bin/sh
 
-# Run this on a file like 12121400.txt
-datestamp=$(echo "$1"|sed 's/\.txt$//')
-mkdir -p datestamp
+output=/tmp/fms.csv
+echo > $output
 
-# Create the fixies.
-parse-to-fixie.sh $datestamp.txt
+echo Output will go in $output.
 
-# Convert the fixies into csvs.
-parse-to-csv.r $datestamp
+for file in "$FMS/archive/*.txt"; do
+  # Run this on a file like 12121400.txt
+  datestamp=$(echo "$file"|sed 's/\.txt$//')
+  mkdir -p datestamp
+
+  # Create the fixies.
+  parse-to-fixie.sh $datestamp.txt
+
+  # Convert the fixies into csvs.
+  parse-to-csv.r $datestamp
+
+  sed 1d $datestamp.csv >> $output
+done
