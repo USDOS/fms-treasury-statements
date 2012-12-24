@@ -5,7 +5,7 @@ datestamp=$(echo "$1"|sed 's/\.txt$//')
 mkdir -p datestamp
 
 # Create the fixies.
-./parse-fixie.sh $datestamp.txt
+./parse-to-fixie.sh $datestamp.txt
 
 # Convert the fixies into csvs.
-./parse-csv.r $datestamp
+./parse-to-csv.r $datestamp
