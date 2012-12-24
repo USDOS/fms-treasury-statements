@@ -5,7 +5,7 @@ set -e
 if [ -z "$FMS" ]; then
   echo You must activate the FMS environment first.
 elif [ "$#" = 1 ]; then
-  datestamp=$(date -d "$1" +%y%m%d00)
+  datestamp=$(date -d "$1" +%y%m%d)
 else
   echo "USAGE: $0 [datestamp]"
   exit 1
@@ -13,8 +13,69 @@ fi
 
 file=$(date -d "$1" +"$FMS/archive/%Y%m%d.txt")
 
-# Skip things that are broken. I suspect that these are holidays.
+# Skip stuff.
 echo '
+Federal holidays 2008
+20080101.txt
+20080121.txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+2008    .txt
+
+Tuesday, January 1New Year’s Day
+Monday, January     21Birthday of Martin Luther King, Jr.
+Monday, February 18*Washingtonâs Birthday
+Monday, May 26Memorial Day
+Friday, July 4Independence Da       y
+Monday, September 1Labor Day
+Monday, October 13Columbus Day
+Tuesday     , November 11Veterans Day
+Thursday, November 27Thanksgiving Day
+Thurs       day, December 25Christmas Day   
+
+Federal holidays 2009
+20090101.txt
+20090216.txt
+20090525.txt
+20090703.txt
+20090907.txt
+20091012.txt
+20091111.txt
+20091126.txt
+20091225.txt
+
+Federal holidays 2010
+20100101.txt
+20100118.txt
+20100215.txt
+20100531.txt
+20100705.txt
+20100906.txt
+20101011.txt
+20101111.txt
+20101125.txt
+20101224.txt
+
+Federal holidays 2011
+20101231.txt
+20110117.txt
+20110221.txt
+20110530.txt
+20110704.txt
+20110905.txt
+20111010.txt
+20111111.txt
+20111124.txt
+20111226.txt
+
+Federal holidays 2012
 20120102.txt
 20120116.txt
 20120220.txt
@@ -25,6 +86,9 @@ echo '
 20121112.txt
 20121122.txt
 20121225.txt
+
+Other weird pages
+20120606.txt
 ' | grep $(basename "$file") > /dev/null && exit
 
 # Skip things that are done.
@@ -33,16 +97,18 @@ test -e "$file" && exit
 # Download, finally.
 get() {
   sleep 0.5s
-  wget -w 8 -O "$file" "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=$1&fname=$datestamp.txt"
+  wget -w 8 -O "$file" "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=$1&fname=$2.txt"
 }
 
-# Try the archive
-get a && exit
-
-# Try the live one
-get w && exit
+# Try the archive and the live directory. Also try different datestamps.
+get a "${datestamp}00" && exit
+get w "${datestamp}00" && exit
+get a "${datestamp}01" && exit
+get w "${datestamp}01" && exit
 
 # Clean up because it didn't work.
+echo -n Something went wrong for\ 
+date -d "$1"
 rm "$file"
 exit 1
 
