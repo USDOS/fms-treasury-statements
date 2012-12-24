@@ -13,8 +13,18 @@ fi
 
 file=$(date -d "$1" +"$FMS/archive/%Y%m%d.txt")
 
-# Skip things that are broken.
+# Skip things that are broken. I suspect that these are holidays.
 echo '
+20120102.txt
+20120116.txt
+20120220.txt
+20120528.txt
+20120704.txt
+20120903.txt
+20121008.txt
+20121112.txt
+20121122.txt
+20121225.txt
 ' | grep $(basename "$file") > /dev/null && exit
 
 # Skip things that are done.
