@@ -15,19 +15,6 @@ file=$(date -d "$1" +"$FMS/archive/%Y%m%d.txt")
 
 # Skip things that are broken.
 echo '
-20121122.txt
-20121112.txt
-20121101.txt
-20121031.txt
-20121030.txt
-20121029.txt
-20121026.txt
-20121025.txt
-20121024.txt
-20121023.txt
-20121022.txt
-20121019.txt
-20121018.txt
 ' | grep $(basename "$file") > /dev/null && exit
 
 # Skip things that are done.
@@ -35,11 +22,17 @@ test -e "$file" && exit
 
 # Download, finally.
 get() {
+  sleep 0.5s
   wget -w 8 -O "$file" "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=$1&fname=$datestamp.txt"
 }
 
-if ! get a && ! get w; then
-  rm "$file"
-  exit 1
-fi
+# Try the archive
+get a && exit
+
+# Try the live one
+get w && exit
+
+# Clean up because it didn't work.
+rm "$file"
+exit 1
 
