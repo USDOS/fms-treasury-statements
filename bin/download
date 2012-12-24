@@ -12,7 +12,13 @@ else
 fi
 
 file=$(date -d "$1" +"$FMS/archive/%Y%m%d.txt")
-test -e "$file" ||
-  wget -O "$file" "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"
 
-sleep 0.5s
+# Skip things that are done.
+test -e "$file" && exit
+
+if ! wget -w 8 -O "$file" \
+  "https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=$datestamp.txt"; then
+  rm "$file"
+  exit 1
+fi
+
