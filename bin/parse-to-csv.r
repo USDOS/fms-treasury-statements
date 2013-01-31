@@ -68,6 +68,8 @@ table2 <- function() {
     table2.wide$table <- 2
 
     table2.wide$type <- factor(c(rep('deposit', 34), rep('withdrawal', 45)))
+    table2.wide$is.total <- 0
+    table2.wide[c(30, 79),'is.total'] <- 1
 
     table2.wide$subitem <- ''
     table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']
