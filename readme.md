@@ -37,6 +37,20 @@ The `run` script does all of the downloading and parsing.
 
     run
 
+
+CSV schems
+--------
+
+Parser just for Table II for now, in two sections: Deposits and Withdrawals
+
+For Deposits:
+
+- Take each line item inder "Federal Reserve Account" and write to separate line, except: 
+    - 
+
+
+
+
 An email
 ----
 Hope the soundsystem is blaring without me . . . stuck in the office on deadline for the banks project so unfortunately won't be able to make it tonight. 
