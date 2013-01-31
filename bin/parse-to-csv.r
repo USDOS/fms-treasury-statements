@@ -49,8 +49,8 @@ table1 <- function() {
 #  Agriculture Loan Repayments (misc)              $          27 $         472 $       1,296
 
 
-# Date,Table,Account,Item,Type,Subtype,Today,MTD,FYT,Footnotes
-# 11/29/2012,2,Federal Reserve Account,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
+# Date,Table,Item,Type,Subitem,Today,MTD,FYT,Footnotes
+# 11/29/2012,2,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
 
 table2 <- function() {
     # Load file
@@ -59,14 +59,37 @@ table2 <- function() {
         c(51, 13, 1, 13, 1, 13),
         stringsAsFactors = F
     )[,-c(3, 5)]
-    colnames(table2.wide) <- c('account', 'today', 'this.month', 'this.fiscal.year')
-    table2.wide[2, 1] <- paste(strip(table2.wide[2:3, 1]), collapse = ' ')
-    table2.wide <- table2.wide[-3,]
 
     table2.wide[1] <- strip(table2.wide[,1])
-    table2.wide[-1] <- data.frame(lapply(table2.wide[-1], number))
 
-    table2.wide
+
+    colnames(table2.wide) <- c('item', 'today', 'mtd', 'ytd')
+    table2.wide$date <- 'aeuaoeu'
+    table2.wide$table <- 2
+
+    table2.wide$type <- factor(c(rep('deposit', 34), rep('withdrawal', 45)))
+    table2.wide[30,'type'] <- 'total.deposit'
+    table2.wide[79,'type'] <- 'total.withdrawal'
+
+    table2.wide$subitem <- ''
+    table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']
+    table2.wide[7:8,'item'] <- 'Deposits by States' # table2.wide[6,'item']
+    table2.wide[22:25,'subitem'] <- table2.wide[22:26,'item']
+    table2.wide[22:25,'item'] <- 'Other Deposits' # table2.wide[21,'item']
+    table2.wide[33,'subitem'] <- table2.wide[33,'item']
+    table2.wide[33,'item'] <- 'Short-Term Cash Investments' # table2.wide[31,'item']
+
+    table2.wide[,'subitem'] <- table2.wide[,'item']
+    table2.wide[,'item'] <- # table2.wide[6,'item']
+    table2.wide[,'subitem'] <- table2.wide[,'item']
+    table2.wide[,'item'] <- # table2.wide[6,'item']
+
+
+    table2.wide$footnotes <- 
+
+    u
+
+    table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'mtd', 'fyt', 'footnotes')]
 }
 
 table5 <- function() {
