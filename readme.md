@@ -49,7 +49,15 @@ For Deposits:
     - Deposits by States
     - Other Deposits
     For each of these, set Item = the main line item (Deposits by States, Other Deposits)
-    Then set populate column Subitem with the indented line items that roll up into 
+    Then set populate column Subitem with the indented line items that roll up into the item:
+- Set isTotal = 0 for all line items except:
+    - Total Other Deposits
+    - Total Federal Reserve Account
+    - Total Deposits (excluding transfers)
+    Set isTotal = 1 to flag these items as subtotals of the other items
+    Keep type as Deposit for all items 
+
+
 
 
 
