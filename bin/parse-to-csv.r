@@ -34,6 +34,35 @@ table1 <- function() {
     table1.wide
 }
 
+
+#___________________________________________________________________________________________
+#     TABLE II  Deposits and Withdrawals of Operating Cash
+#___________________________________________________________________________________________
+#                                                                    This         Fiscal
+#                    Deposits                          Today         month         year
+#                                                                   to date      to date
+#___________________________________________________________________________________________
+#
+#Federal Reserve Account:
+#  Agriculture Loan Repayments (misc)              $          27 $         472 $       1,296
+
+table2 <- function() {
+    # Load file
+    table2.wide <- read.fwf(
+        'archive/12121400/table2.fixie',
+        c(51, 13, 1, 13, 1, 13),
+        stringsAsFactors = F
+    )[,-c(3, 5)]
+    colnames(table2.wide) <- c('account', 'today', 'this.month', 'this.fiscal.year')
+    table2.wide[2, 1] <- paste(strip(table2.wide[2:3, 1]), collapse = ' ')
+    table2.wide <- table2.wide[-3,]
+
+    table2.wide[1] <- strip(table2.wide[,1])
+    table2.wide[-1] <- data.frame(lapply(table2.wide[-1], number))
+
+    table2.wide
+}
+
 table5 <- function() {
     # Load file
     table5.wide <- read.fwf(
