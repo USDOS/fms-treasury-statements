@@ -45,8 +45,11 @@ Parser just for Table II for now, in two sections: Deposits and Withdrawals
 
 For Deposits:
 
-- Take each line item inder "Federal Reserve Account" and write to separate line, except: 
-    - 
+- Take each line item inder "Federal Reserve Account" and write to separate line with Subitem column blank, except for: 
+    - Deposits by States
+    - Other Deposits
+    For each of these, set Item = the main line item (Deposits by States, Other Deposits)
+    Then set populate column Subitem with the indented line items that roll up into 
 
 
 
