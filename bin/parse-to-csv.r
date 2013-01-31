@@ -68,8 +68,6 @@ table2 <- function() {
     table2.wide$table <- 2
 
     table2.wide$type <- factor(c(rep('deposit', 34), rep('withdrawal', 45)))
-    table2.wide[30,'type'] <- 'total.deposit'
-    table2.wide[79,'type'] <- 'total.withdrawal'
 
     table2.wide$subitem <- ''
     table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']
@@ -79,7 +77,7 @@ table2 <- function() {
     table2.wide[33,'subitem'] <- table2.wide[33,'item']
     table2.wide[33,'item'] <- 'Short-Term Cash Investments' # table2.wide[31,'item']
 
-    table2.wide[,'subitem'] <- table2.wide[,'item']
+    table2.wide[65:,'subitem'] <- table2.wide[,'item']
     table2.wide[,'item'] <- # table2.wide[6,'item']
     table2.wide[,'subitem'] <- table2.wide[,'item']
     table2.wide[,'item'] <- # table2.wide[6,'item']
