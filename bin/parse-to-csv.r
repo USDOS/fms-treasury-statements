@@ -1,4 +1,6 @@
 library(reshape2)
+library(stringr)
+
 strip <- function(string) {
     # Strip leading and trailing spaces
     str_replace(str_replace(string, '^ *', ''), ' *$', '')
@@ -46,10 +48,14 @@ table1 <- function() {
 #Federal Reserve Account:
 #  Agriculture Loan Repayments (misc)              $          27 $         472 $       1,296
 
+
+# Date,Table,Account,Item,Type,Subtype,Today,MTD,FYT,Footnotes
+# 11/29/2012,2,Federal Reserve Account,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
+
 table2 <- function() {
     # Load file
     table2.wide <- read.fwf(
-        'archive/12121400/table2.fixie',
+        'archive/20121129/table2.fixie',
         c(51, 13, 1, 13, 1, 13),
         stringsAsFactors = F
     )[,-c(3, 5)]
