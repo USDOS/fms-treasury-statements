@@ -68,6 +68,9 @@ table2 <- function(datestamp) {
     table2.wide$date <- datestamp
     table2.wide$table <- 2
 
+    table2.wide$footnotes <- ''
+    table2.wide[!is.na(str_match(table2.wide[,2], '1/')),'footnotes'] <- '1'
+
     table2.wide$type <- factor(c(rep('deposit', 35), rep('withdrawal', 45)))
     table2.wide$is.total <- 0
     table2.wide[c(26, 34, 74, 80),'is.total'] <- 1
@@ -107,7 +110,6 @@ table2 <- function(datestamp) {
     table2.wide[80,'item'] <- ''
 
     table2.wide$url <- if (datestamp == '20121129') 'https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt' else ''
-    table2.wide$footnotes <- ''
 
     # Remove junk.
     table2.wide <- na.omit(table2.wide)

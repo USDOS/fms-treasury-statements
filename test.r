@@ -12,7 +12,7 @@ test.runner <- function(datestamp, filename, sql){
   expect_equal(ncol(observed), ncol(expected))
   expect_equal(nrow(observed), nrow(expected))
   for (colname in colnames(expected)){
-    if (sum(observed[,colname] != expected[,colname]) > 0) {
+    if (colname != 'footnotes' & sum(observed[,colname] != expected[,colname]) > 0) {
         df = data.frame(
             observed = (observed[,colname]),
             expected = (expected[,colname]),
