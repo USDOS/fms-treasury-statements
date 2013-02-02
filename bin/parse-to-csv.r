@@ -98,6 +98,9 @@ table2 <- function(datestamp) {
     table2.wide[66:74,'item'] <- 'Other Withdrawals' # table2.wide[64,'item']
     table2.wide[74,'subitem'] <- ''
 
+    table2.wide[76,'subitem'] <- table2.wide[76,'item']
+    table2.wide[76,'item'] <- table2.wide[75,'item']
+
     table2.wide[79,'subitem'] <- paste(table2.wide[78:79,'item'], collapse = ' ')
     table2.wide[79,'item'] <- table2.wide[77,'item']
 

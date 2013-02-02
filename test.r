@@ -6,8 +6,8 @@ test.runner <- function(datestamp, filename, sql){
   observed <- read.csv(paste('archive', datestamp, filename, sep = '/'), stringsAsFactors = F)
   expected <- read.csv(paste('fixtures', datestamp, filename, sep = '/'), stringsAsFactors = F)
 
-  print(observed[1:2,-(1:2)])
-  print(expected[1:2,-(1:2)])
+# print(observed[1:2,-(1:2)])
+# print(expected[1:2,-(1:2)])
   expect_equal(colnames(observed), colnames(expected))
   expect_equal(ncol(observed), ncol(expected))
   expect_equal(nrow(observed), nrow(expected))
