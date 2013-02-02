@@ -74,6 +74,10 @@ Federal holidays 2012
 20121122
 20121225
 
+Federal holidays 2013
+20130101
+20130121
+
 Other weird pages
 20120606
 ' | grep $(basename "$file" .txt) > /dev/null && exit
@@ -92,10 +96,11 @@ get a "${datestamp}00" && exit
 get w "${datestamp}00" && exit
 get a "${datestamp}01" && exit
 get w "${datestamp}01" && exit
+get a "${datestamp}02" && exit
+get w "${datestamp}02" && exit
 
 # Clean up because it didn't work.
 echo -n Something went wrong for\ 
 date -d "$1"
 rm "$file"
 exit 1
-
