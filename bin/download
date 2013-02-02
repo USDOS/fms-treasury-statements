@@ -116,6 +116,7 @@ Federal holidays 2013
 
 Other weird pages
 20120606
+20081001
 ' | grep $(basename "$file" .txt) > /dev/null && exit
 
 # Skip things that are done.
