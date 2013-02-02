@@ -53,7 +53,7 @@ table1 <- function() {
 # Date,Table,Item,Type,Subitem,Today,MTD,FYT,Footnotes
 # 11/29/2012,2,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
 
-# Fake the url for now.
+# Ignore the url for now.
 # https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=12112600.txt
 table2 <- function(datestamp) {
     # Load file
