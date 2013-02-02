@@ -7,7 +7,7 @@ echo 'I am extracting the total deposits, total withdrawals and net change to'
 echo "the file $outfile in fixie format."
 
 # Fixie header
-echo 'File name (70 characters)                                             Item (43 characters)                       Today (16 chars)  MTD (16 chars)  YTD (16 chars)' > $outfile
+echo "read.fwf('/tmp/summary.fixie', c(70, 50, 13, 1, 13, 1, 13), skip = 1, col.names = c('file', 'item', 'today', 'space1', 'mtd', 'space2', 'ytd'))" > $outfile
 
 # Body
 for txt in $(ls "$FMS"/archive/*.txt); do
