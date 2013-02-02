@@ -13,7 +13,12 @@ test.runner <- function(datestamp, filename, sql){
   expect_equal(nrow(observed), nrow(expected))
   for (colname in colnames(expected)){
     if (sum(observed[,colname] != expected[,colname]) > 0) {
-        print(data.frame(observed = observed[,colname], expected =  expected[,colname]))
+        df = data.frame(
+            observed = (observed[,colname]),
+            expected = (expected[,colname]),
+            stringsAsFactors = F
+        )
+        print(df[df$observed != df$expected,])
     }
     expect_equal(observed[,colname], expected[,colname], info = paste('failed on', colname, 'column'))
   }
