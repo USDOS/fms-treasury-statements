@@ -8,7 +8,12 @@ strip <- function(string) {
 
 number <- function(string){
     # Remove the leading dollar sign, remove commas, and convert to numeric.
-    as.numeric(str_replace_all(str_replace(strip(string), '^[$]?', ''), ',', ''))
+    NAs <- is.na(string)
+    string[NAs] <- 0
+    string[!NAs] <- (str_replace_all(str_replace(strip(string[!NAs]), '^[$]?', ''), ',', ''))
+    string <- as.numeric(string)
+    string[NAs] <- NA
+    string
 }
 
 #                                                                Opening balance
@@ -52,45 +57,48 @@ table1 <- function() {
 # Date,Table,Item,Type,Subitem,Today,MTD,FYT,Footnotes
 # 11/29/2012,2,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
 
-table2 <- function() {
+table2 <- function(datestamp) {
     # Load file
     table2.wide <- read.fwf(
-        'archive/20121129/table2.fixie',
+        paste('archive', datestamp, 'table2.fixie', sep = '/'),
         c(51, 13, 1, 13, 1, 13),
         stringsAsFactors = F
     )[,-c(3, 5)]
 
     table2.wide[1] <- strip(table2.wide[,1])
-
+    table2.wide[-1] <- data.frame(lapply(table2.wide[-1], number))
 
     colnames(table2.wide) <- c('item', 'today', 'mtd', 'ytd')
-    table2.wide$date <- 'aeuaoeu'
+    table2.wide$date <- datestamp
     table2.wide$table <- 2
 
     table2.wide$type <- factor(c(rep('deposit', 34), rep('withdrawal', 45)))
     table2.wide$is.total <- 0
-    table2.wide[c(30, 73, 79),'is.total'] <- 1
+    table2.wide[c(26, 30, 73, 79),'is.total'] <- 1
 
     table2.wide$subitem <- ''
     table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']
     table2.wide[7:8,'item'] <- 'Deposits by States' # table2.wide[6,'item']
-    table2.wide[22:25,'subitem'] <- table2.wide[22:26,'item']
-    table2.wide[22:25,'item'] <- 'Other Deposits' # table2.wide[21,'item']
+
+    table2.wide[22:26,'subitem'] <- table2.wide[22:26,'item']
+    table2.wide[22:26,'item'] <- 'Other Deposits' # table2.wide[21,'item']
+    table2.wide[26,'subitem'] <- ''
+
     table2.wide[33,'subitem'] <- table2.wide[33,'item']
     table2.wide[33,'item'] <- 'Short-Term Cash Investments' # table2.wide[31,'item']
 
-    table2.wide[65:72,'subitem'] <- table2.wide[65:73,'item']
-    table2.wide[73,'subitem'] <- ''
+    table2.wide[65:72,'subitem'] <- table2.wide[65:72,'item']
     table2.wide[65:73,'item'] <- 'Other Withdrawals' # table2.wide[64,'item']
-    table2.wide[,'subitem'] <- table2.wide[,'item']
-    table2.wide[,'item'] <- # table2.wide[6,'item']
+    table2.wide[73,'subitem'] <- ''
 
+    table2.wide[78,'subitem'] <- paste(table2.wide[77:78,'item'], collapse = ' ')
+    table2.wide[78,'item'] <- table2.wide[76,'item']
 
-    table2.wide$footnotes <- 
+    table2.wide[79,'item'] <- ''
 
-    u
+    table2.wide$footnotes <- ''
 
-    table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'mtd', 'fyt', 'footnotes')]
+    (table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'mtd', 'ytd', 'footnotes')])
 }
 
 table5 <- function() {
