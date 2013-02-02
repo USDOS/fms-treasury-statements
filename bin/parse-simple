@@ -1,0 +1,15 @@
+#!/bin/sh
+
+outfile=/tmp/summary.fixie
+echo > $outfile
+
+echo 'I am extracting the total deposits, total withdrawals and net change to'
+echo "the file $outfile"
+
+for txt in $(ls "$FMS"/archive/*.txt); do
+  sed -n \
+    -e '/Total Deposits (excluding transfers)/p' \
+    -e '/Total Withdrawals (excluding transfers)/p' \
+    -e '/Net Change in Operating Cash Balance/p' \
+    $txt >> $outfile
+done
