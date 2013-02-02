@@ -16,9 +16,7 @@ for file in $(ls $FMS/archive/*.txt); do
   parse-to-fixie.sh $datestamp.txt
 
   # Convert the fixies into csvs.
-  parse-to-csv.r $(basename $datestamp .txt)
+# parse-to-csv.r $(basename $datestamp .txt)
 
 # sed 1d $datestamp.csv >> $output
-
-  break
 done
