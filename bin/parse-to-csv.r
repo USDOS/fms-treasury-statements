@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript
 library(reshape2)
 library(stringr)
 
@@ -125,3 +126,13 @@ table5 <- function() {
         variable.name = 'type.of.depository', value.name = 'amount')
     table5.long
 }
+
+main <- function() {
+    datestamp <- commandArgs(trailingOnly = T)[1]
+    write.csv(table2(datestamp),
+        file = paste('archive', datestamp, 'table2.csv', sep = '/'),
+        row.names = F
+    )
+}
+
+main()
