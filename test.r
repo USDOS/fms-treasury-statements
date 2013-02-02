@@ -11,7 +11,7 @@ test.runner <- function(datestamp, filename, sql){
   expect_equal(colnames(observed), colnames(expected))
   expect_equal(ncol(observed), ncol(expected))
   expect_equal(nrow(observed), nrow(expected))
-# expect_equal(observed, expected)
+  expect_equal(observed, expected)
 }
 
 #test.runner('20121129', 'table1.csv')
