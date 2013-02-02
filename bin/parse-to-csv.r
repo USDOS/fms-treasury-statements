@@ -54,7 +54,6 @@ table1 <- function() {
 # 11/29/2012,2,Agriculture Loan Repayments (misc),Deposits,,27,472,"1,296",
 
 # Ignore the url for now.
-# https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=w&fname=12112600.txt
 table2 <- function(datestamp) {
     # Load file
     table2.wide <- read.fwf(
@@ -93,6 +92,7 @@ table2 <- function(datestamp) {
 
     table2.wide[79,'item'] <- ''
 
+    table2.wide$url <- if (datestamp == '20121129') 'https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt' else ''
     table2.wide$footnotes <- ''
 
     # Remove junk.
@@ -102,8 +102,8 @@ table2 <- function(datestamp) {
     table2.wide[c('today', 'mtd', 'ytd')] <- data.frame(lapply(table2.wide[c('today', 'mtd', 'ytd')], number))
 
     # Arrange nicely.
-    table2.wide[c(
-        'date', 'table', 'item', 'type', 'subitem',
+    table2.wide[c('url', 'date', 'table',
+        'type', 'item', 'subitem',
         'is.total', 'today', 'mtd', 'ytd', 'footnotes'
     )]
 }

@@ -1,68 +1,68 @@
-url,date,table,type,item,subitem,is.total,today,mtd,ytd,footnotes
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Agriculture Loan Repayments (misc),,0,27,472,1296,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Air Transport Security Fees,,0,33,51,243,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Cash FTD's Received (Table IV),,0,4123,138794,301882,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Commodity Credit Corporation programs,,0,24,533,1036,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Customs and Certain Excise Taxes,,0,180,3365,7032,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Supplemental Security Income,Deposits by States,0,301,358,730,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Unemployment,Deposits by States,0,28,4755,6999,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Education Department programs,,0,133,3029,6001,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Energy Department programs,,0,24,440,1181,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Estate and Gift Taxes,,0,64,1055,2190,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Federal Reserve Earnings,,0,0,6460,14689,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,"Foreign Deposits, Military Sales",,0,4,2214,3910,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Housing and Urban Development programs,,0,6,284,615,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,"Individual Income and Employment Taxes, Not Withheld",,0,186,4171,18453,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Interest recd from cash investments,,0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Justice Department programs,,0,21,291,1343,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Postal Service,,0,325,7095,15221,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Public Debt Cash Issues (Table III-B),,0,101807,678031,1404592,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Other Deposits,Minerals Management Svc/Collections,0,55,215,1576,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Other Deposits,Pension Benefit Guaranty Corp.,0,89,114,1462,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Other Deposits,TARP,0,35,2505,5020,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Other Deposits,Thrift Savings Plan Transfer,0,114,1716,2782,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Other Deposits,,1,292,9659,22976,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Change in Balance of Uncollected Funds,,0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Transfers from Depositaries,,0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Short-Term Cash Investments,Transfers from Federal Reserve Account (Table V),0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,deposit,Total Deposits (excluding transfers)   ,,1,107575,861057,1810389,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Commodity Credit Corporation programs,,0,116,2093,8510,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Defense Vendor Payments (EFT),,0,1513,28752,59102,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Education Department programs,,0,789,10246,26964,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Energy Department programs,,0,150,2513,5788,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Federal Employees Insurance Payments,,0,144,5588,11722,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Fed. Highway Administration programs,,0,186,3398,7962,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Federal Salaries (EFT),,0,828,14174,29440,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Food and Nutrition Service (misc),,0,140,8511,17335,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,GSA programs,,0,34,1515,3308,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Health and Human Services Grants (misc),,0,597,7140,14881,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Housing and Urban Development programs,,0,175,6431,12485,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Interest on Treasury Securities,,0,1,30079,44643,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,IRS Tax Refunds Business (EFT),,0,-37,1555,5492,1/ Reported as a negative amount due to a return/reversal of $37 million. 
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,IRS Tax Refunds Individual (EFT),,0,4,1284,5696,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Justice Department programs,,0,86,1592,2859,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Labor Dept. prgms (excl. unemployment),,0,68,1173,2362,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Medicaid,,0,2113,20196,42729,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Medicare,,0,1413,46420,95091,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,NASA programs,,0,0,1358,2763,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Postal Service Money Orders and Other,,0,99,2821,6444,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Public Debt Cash Redemp. (Table III-B),,0,85251,602213,1191465,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Social Security Benefits (EFT),,0,0,57311,114260,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Supple. Nutrition Assist. Program (SNAP),,0,23,338,721,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Temporary Assistance for Needy Families (HHS),,0,352,1563,3285,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Transportation Security Admin. (DHS),,0,1,15,152,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Unemployment Insurance Benefits,,0,212,5712,11970,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Veterans Affairs programs,,0,190,3588,7885,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Agency for Internat'l Development,0,234,1346,2519,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Emergency Prep & Response (DHS),0,152,1889,3008,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Federal Aviation Administration,0,59,638,1419,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Federal Crop Ins. Corp.,0,176,2997,5753,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Interior,0,187,817,1458,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Minerals Management Service,0,187,197,474,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Tennessee Valley Authority (net),0,524,1137,-146,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,Unclassified,0,1104,24787,48489,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Other Withdrawals,,1,2623,66838,133912,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Transfers to Depositaries,,0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Transfers to Depositaries,Total Federal Reserve Account,0,97071,934416,1869228,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Short-Term Cash Investments,Transfers to Federal Reserve Account (Table V),0,0,0,0,
-https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt,20121129,2,withdrawal,Total Withdrawals (excluding transfers),,1,97071,934416,1869228,
+"url","date","table","type","item","subitem","is.total","today","mtd","ytd","footnotes"
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Agriculture Loan Repayments (misc)","","0","27","472","1296",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Air Transport Security Fees","","0","33","51","243",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Cash FTD's Received (Table IV)","","0","4123","138794","301882",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Commodity Credit Corporation programs","","0","24","533","1036",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Customs and Certain Excise Taxes","","0","180","3365","7032",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Supplemental Security Income","Deposits by States","0","301","358","730",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Unemployment","Deposits by States","0","28","4755","6999",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Education Department programs","","0","133","3029","6001",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Energy Department programs","","0","24","440","1181",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Estate and Gift Taxes","","0","64","1055","2190",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Federal Reserve Earnings","","0","0","6460","14689",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Foreign Deposits"," Military Sales","","0","4","2214","3910",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Housing and Urban Development programs","","0","6","284","615",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Individual Income and Employment Taxes"," Not Withheld","","0","186","4171","18453",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Interest recd from cash investments","","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Justice Department programs","","0","21","291","1343",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Postal Service","","0","325","7095","15221",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Public Debt Cash Issues (Table III-B)","","0","101807","678031","1404592",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Other Deposits","Minerals Management Svc/Collections","0","55","215","1576",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Other Deposits","Pension Benefit Guaranty Corp.","0","89","114","1462",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Other Deposits","TARP","0","35","2505","5020",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Other Deposits","Thrift Savings Plan Transfer","0","114","1716","2782",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Other Deposits","","1","292","9659","22976",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Change in Balance of Uncollected Funds","","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Transfers from Depositaries","","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Short-Term Cash Investments","Transfers from Federal Reserve Account (Table V)","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","deposit","Total Deposits (excluding transfers)   ","","1","107575","861057","1810389",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Commodity Credit Corporation programs","","0","116","2093","8510",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Defense Vendor Payments (EFT)","","0","1513","28752","59102",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Education Department programs","","0","789","10246","26964",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Energy Department programs","","0","150","2513","5788",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Federal Employees Insurance Payments","","0","144","5588","11722",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Fed. Highway Administration programs","","0","186","3398","7962",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Federal Salaries (EFT)","","0","828","14174","29440",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Food and Nutrition Service (misc)","","0","140","8511","17335",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","GSA programs","","0","34","1515","3308",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Health and Human Services Grants (misc)","","0","597","7140","14881",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Housing and Urban Development programs","","0","175","6431","12485",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Interest on Treasury Securities","","0","1","30079","44643",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","IRS Tax Refunds Business (EFT)","","0","-37","1555","5492","1/ Reported as a negative amount due to a return/reversal of $37 million. "
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","IRS Tax Refunds Individual (EFT)","","0","4","1284","5696",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Justice Department programs","","0","86","1592","2859",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Labor Dept. prgms (excl. unemployment)","","0","68","1173","2362",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Medicaid","","0","2113","20196","42729",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Medicare","","0","1413","46420","95091",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","NASA programs","","0","0","1358","2763",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Postal Service Money Orders and Other","","0","99","2821","6444",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Public Debt Cash Redemp. (Table III-B)","","0","85251","602213","1191465",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Social Security Benefits (EFT)","","0","0","57311","114260",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Supple. Nutrition Assist. Program (SNAP)","","0","23","338","721",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Temporary Assistance for Needy Families (HHS)","","0","352","1563","3285",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Transportation Security Admin. (DHS)","","0","1","15","152",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Unemployment Insurance Benefits","","0","212","5712","11970",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Veterans Affairs programs","","0","190","3588","7885",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Agency for Internat'l Development","0","234","1346","2519",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Emergency Prep & Response (DHS)","0","152","1889","3008",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Federal Aviation Administration","0","59","638","1419",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Federal Crop Ins. Corp.","0","176","2997","5753",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Interior","0","187","817","1458",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Minerals Management Service","0","187","197","474",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Tennessee Valley Authority (net)","0","524","1137","-146",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","Unclassified","0","1104","24787","48489",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Other Withdrawals","","1","2623","66838","133912",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Transfers to Depositaries","","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Transfers to Depositaries","Total Federal Reserve Account","0","97071","934416","1869228",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Short-Term Cash Investments","Transfers to Federal Reserve Account (Table V)","0","0","0","0",""
+"https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt","20121129","2","withdrawal","Total Withdrawals (excluding transfers)","","1","97071","934416","1869228",""
