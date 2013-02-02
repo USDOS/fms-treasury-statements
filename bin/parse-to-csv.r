@@ -8,12 +8,7 @@ strip <- function(string) {
 
 number <- function(string){
     # Remove the leading dollar sign, remove commas, and convert to numeric.
-    NAs <- is.na(string)
-    string[NAs] <- 0
-    string[!NAs] <- (str_replace_all(str_replace(strip(string[!NAs]), '^[$]?', ''), ',', ''))
-    string <- as.numeric(string)
-    string[NAs] <- NA
-    string
+    as.numeric(str_replace_all(str_replace(strip(string), '^[$]?(?:[0-9]/)?', ''), ',', ''))
 }
 
 #                                                                Opening balance
@@ -66,7 +61,6 @@ table2 <- function(datestamp) {
     )[,-c(3, 5)]
 
     table2.wide[1] <- strip(table2.wide[,1])
-    table2.wide[-1] <- data.frame(lapply(table2.wide[-1], number))
 
     colnames(table2.wide) <- c('item', 'today', 'mtd', 'ytd')
     table2.wide$date <- datestamp
@@ -98,7 +92,14 @@ table2 <- function(datestamp) {
 
     table2.wide$footnotes <- ''
 
-    (table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'mtd', 'ytd', 'footnotes')])
+    # Remove junk.
+    table2.wide <- na.omit(table2.wide)
+
+    # Make numeric.
+    table2.wide[c('today', 'mtd', 'ytd')] <- data.frame(lapply(table2.wide[c('today', 'mtd', 'ytd')], number))
+
+    # Arrange nicely.
+    table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'today', 'mtd', 'ytd', 'footnotes')]
 }
 
 table5 <- function() {
