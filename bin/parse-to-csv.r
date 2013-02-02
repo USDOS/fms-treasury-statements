@@ -4,7 +4,7 @@ library(stringr)
 
 strip <- function(string) {
     # Strip leading and trailing spaces
-    str_replace(str_replace(string, '^ *', ''), ' *$', '')
+    str_replace(str_replace(string, '^ *', ''), ':? *$', '')
 }
 
 number <- function(string){
@@ -68,29 +68,40 @@ table2 <- function(datestamp) {
     table2.wide$date <- datestamp
     table2.wide$table <- 2
 
-    table2.wide$type <- factor(c(rep('deposit', 34), rep('withdrawal', 45)))
+    table2.wide$type <- factor(c(rep('deposit', 35), rep('withdrawal', 45)))
     table2.wide$is.total <- 0
-    table2.wide[c(26, 30, 73, 79),'is.total'] <- 1
+    table2.wide[c(26, 30, 34, 74, 80),'is.total'] <- 1
 
     table2.wide$subitem <- ''
     table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']
     table2.wide[7:8,'item'] <- 'Deposits by States' # table2.wide[6,'item']
 
+    table2.wide[16,'item'] <- paste(table2.wide[15:16,'item'], collapse = ' ')
+
     table2.wide[22:26,'subitem'] <- table2.wide[22:26,'item']
     table2.wide[22:26,'item'] <- 'Other Deposits' # table2.wide[21,'item']
     table2.wide[26,'subitem'] <- ''
 
-    table2.wide[33,'subitem'] <- table2.wide[33,'item']
-    table2.wide[33,'item'] <- 'Short-Term Cash Investments' # table2.wide[31,'item']
+    table2.wide[28,'item'] <- paste(table2.wide[27:28,'item'], collapse = ' ')
 
-    table2.wide[65:72,'subitem'] <- table2.wide[65:72,'item']
-    table2.wide[65:73,'item'] <- 'Other Withdrawals' # table2.wide[64,'item']
-    table2.wide[73,'subitem'] <- ''
+    table2.wide[30,'subitem'] <- table2.wide[30,'item']
+    table2.wide[30,'item'] <- table2.wide[29,'item']
 
-    table2.wide[78,'subitem'] <- paste(table2.wide[77:78,'item'], collapse = ' ')
-    table2.wide[78,'item'] <- table2.wide[76,'item']
+    table2.wide[33,'subitem'] <- paste(table2.wide[32:33,'item'], collapse = ' ')
+    table2.wide[33,'item'] <- table2.wide[31,'item']
 
-    table2.wide[79,'item'] <- ''
+    table2.wide[34,'item'] <- ''
+
+    table2.wide[61,'item'] <- paste(table2.wide[60:61,'item'], collapse = ' ')
+
+    table2.wide[66:73,'subitem'] <- table2.wide[66:73,'item']
+    table2.wide[66:74,'item'] <- 'Other Withdrawals' # table2.wide[64,'item']
+    table2.wide[74,'subitem'] <- ''
+
+    table2.wide[79,'subitem'] <- paste(table2.wide[78:79,'item'], collapse = ' ')
+    table2.wide[79,'item'] <- table2.wide[77,'item']
+
+    table2.wide[80,'item'] <- ''
 
     table2.wide$url <- if (datestamp == '20121129') 'https://www.fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=12112600.txt' else ''
     table2.wide$footnotes <- ''
@@ -140,4 +151,6 @@ main <- function() {
     )
 }
 
-main()
+if (length(commandArgs(trailingOnly = T)) > 0){
+    main()
+}
