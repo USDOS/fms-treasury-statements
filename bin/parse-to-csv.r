@@ -100,7 +100,10 @@ table2 <- function(datestamp) {
     table2.wide[c('today', 'mtd', 'ytd')] <- data.frame(lapply(table2.wide[c('today', 'mtd', 'ytd')], number))
 
     # Arrange nicely.
-    table2.wide[c('date', 'table', 'item', 'type', 'subitem', 'today', 'mtd', 'ytd', 'footnotes')]
+    table2.wide[c(
+        'date', 'table', 'item', 'type', 'subitem',
+        'is.total', 'today', 'mtd', 'ytd', 'footnotes'
+    )]
 }
 
 table5 <- function() {

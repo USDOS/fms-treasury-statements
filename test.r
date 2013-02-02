@@ -8,6 +8,7 @@ test.runner <- function(datestamp, filename, sql){
 
   print(observed[1:2,])
   print(expected[1:2,])
+  expect_equal(colnames(observed), colnames(expected))
   expect_equal(ncol(observed), ncol(expected))
   expect_equal(nrow(observed), nrow(expected))
 # expect_equal(observed, expected)

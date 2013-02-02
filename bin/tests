@@ -1,0 +1,7 @@
+#!/bin/sh
+
+(
+  cd "$FMS"
+  parse-to-csv.r 20121129
+  ./test.r
+)
