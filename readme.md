@@ -25,7 +25,14 @@ After you download, you might want to commit the submodule
     cd ..
     git commit archive -m downloaded\ a\ file
 
-The downloaded file gets saved in `./archive`. Parse it.
+The downloaded file gets saved in `./archive`.
+
+Run the simple parser that just gets total withdrawals, total deposits and
+net change
+
+    parse-simple
+
+Try the complete parser that doesn't work yet.
 
     parse ./archive/$filename
 
