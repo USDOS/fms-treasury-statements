@@ -8,6 +8,7 @@ echo "the file $outfile"
 
 for txt in $(ls "$FMS"/archive/*.txt); do
   sed -n \
+    -e "s+^+$txt +" \
     -e '/Total Deposits (excluding transfers)/p' \
     -e '/Total Withdrawals (excluding transfers)/p' \
     -e '/Net Change in Operating Cash Balance/p' \
