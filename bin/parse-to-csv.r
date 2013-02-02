@@ -70,7 +70,7 @@ table2 <- function(datestamp) {
 
     table2.wide$type <- factor(c(rep('deposit', 35), rep('withdrawal', 45)))
     table2.wide$is.total <- 0
-    table2.wide[c(26, 30, 34, 74, 80),'is.total'] <- 1
+    table2.wide[c(26, 34, 74, 80),'is.total'] <- 1
 
     table2.wide$subitem <- ''
     table2.wide[7:8,'subitem'] <- table2.wide[7:8,'item']

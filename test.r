@@ -19,6 +19,7 @@ test.runner <- function(datestamp, filename, sql){
             stringsAsFactors = F
         )
         print(df[df$observed != df$expected,])
+        print(t(df[df$observed != df$expected,]))
     }
     expect_equal(observed[,colname], expected[,colname], info = paste('failed on', colname, 'column'))
   }
