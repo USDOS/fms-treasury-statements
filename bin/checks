@@ -4,3 +4,9 @@
 
 echo Table 2 fixie length over time
 wc -l "$FMS"/archive/*/table2.fixie | sed -e '$d' -e 's/^ *//'|cut -d\  -f1|spark
+
+echo 20 Lines with no numbers
+grep -E '^[^0-9]*$' archive/*/table2.fixie | head -n 20
+
+echo Number of lines without numbers for each file
+grep -E '^[^0-9]*$' archive/*/table2.fixie | cut -d: -f1 | uniq -c | sort
