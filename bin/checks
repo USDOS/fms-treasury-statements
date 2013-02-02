@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wc -l "$FMS"/archive/*/table2.fixie | sed -e '$d' -e 's/^ *//'
+wc -l "$FMS"/archive/*/table2.fixie | sed -e '$d' -e 's/^ *//'|cut -d\  -f1|spark
