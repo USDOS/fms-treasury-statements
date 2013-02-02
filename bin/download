@@ -21,6 +21,7 @@ Federal holidays 2005
 20050221
 20050530
 20050704
+20050905
 20051010
 20051111
 20051124
@@ -117,6 +118,7 @@ Federal holidays 2013
 Other weird pages
 20120606
 20081001
+20061023
 ' | grep $(basename "$file" .txt) > /dev/null && exit
 
 # Skip things that are done.

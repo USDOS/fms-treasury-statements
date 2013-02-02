@@ -10,4 +10,10 @@ while
   test $a = 'Sat' || test $a = 'Sun' || download @$day
 do
   day=$(($day - $oneday))
+
+  if test 20050608 -eq $(date -d@$day +%Y%m%d); then
+    echo 'Done'
+    exit
+  fi
+
 done
