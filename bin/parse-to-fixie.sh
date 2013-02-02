@@ -7,7 +7,8 @@ mkdir -p datestamp
 # Pick out fixie files for the different tables.
 #sed -n '15,19 p' $datestamp.txt > $datestamp/table1.fixie
 #sed -n -e '34,67 p' -e '78,123 p' $datestamp.txt > $datestamp/table2.fixie
-sed -n -e '/TABLE II /,/PAGE: *4/ p' $datestamp.txt > $datestamp/table2.fixie
+sed -n -e '/^ *$/d' -e '/TABLE II /,/PAGE: *4/ p' $datestamp.txt |
+    sed -e '1,/Federal Reserve Account:/d' -e '/PAGE: *3/,/Federal Reserve Account:/ d' > $datestamp/table2.fixie
 #sed -n -e '137,155 p' -e '164,178 p' $datestamp.txt > $datestamp/table3a.fixie
 #sed -n '192,214 p' $datestamp.txt > $datestamp/table3b.fixie
 #sed -n '230,245 p' $datestamp.txt > $datestamp/table3c.fixie
